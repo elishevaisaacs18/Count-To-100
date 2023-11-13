@@ -1,0 +1,24 @@
+
+.inputBox {
+  width: 25vw;
+  height: 5vh;
+  margin: 8%;
+  display: block;
+}
+
+.logInContainer {
+  width: 30vw;
+  background-color: rgb(199, 170, 231);
+  height: 90vh;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.logInBtn {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgb(250, 184, 239);
+  width: 10vh;
+  height: 5vh;
+
+}
