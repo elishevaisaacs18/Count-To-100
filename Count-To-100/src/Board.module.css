@@ -1,0 +1,11 @@
+.boardsCon{
+    /* display: flex; */
+   
+  }
+  
+  .playerBoard{
+  background-color: rgb(148, 188, 189);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  }

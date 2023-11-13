@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const LogIn = () => {
   return (
-    <div style ={{width:"30vw", backgroundColor:"blue", height:"90vh"}}>
-      
-    </div>
-  )
-}
+    <aside
+      style={{ width: "30vw", backgroundColor: "blue", height: "90vh" }}
+    ></aside>
+  );
+};
 
-export default LogIn
+export default LogIn;
