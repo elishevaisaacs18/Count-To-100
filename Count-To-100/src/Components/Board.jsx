@@ -14,15 +14,15 @@ const Board = (props) => {
   }
 
   return (
-    <>
-      <h1>Count To 100</h1>
+    <div className={styles.boardContainer}>
+      <h1 className={styles.title}>Count To 100</h1>
       <div
         className={styles.boardsCon}
         style={{ width: "70vw", height: "90vh" }}
       >
         {boardsArr}
       </div>
-    </>
+    </div>
   );
 };
 

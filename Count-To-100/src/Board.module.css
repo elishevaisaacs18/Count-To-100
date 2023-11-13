@@ -1,11 +1,19 @@
-.boardsCon{
-    /* display: flex; */
-   
-  }
-  
-  .playerBoard{
+.boardContainer {
+  width: 68vw;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.playerBoard {
   background-color: rgb(148, 188, 189);
   margin: 5px;
   padding: 5px;
   border-radius: 10px;
-  }
+  width: 60vw;
+  height: 34vh;
+  margin: 2vw;
+}
+
+.title {
+  margin: 2vw;
+}
