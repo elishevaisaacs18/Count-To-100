@@ -6,11 +6,16 @@ function App() {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [connected, setConnected] = useState([]);
+  const [hasStartedGame, setHasStartedGame] = useState(false);
+
   console.log("CONNECTED", connected);
 
   return (
     <div style={{ display: "flex" }}>
-      <Board connected={connected} />
+      <Board 
+      connected={connected} 
+      hasStartedGame={hasStartedGame}
+      setHasStartedGame={setHasStartedGame}/>
       <LogIn
         userName={userName}
         setUserName={setUserName}

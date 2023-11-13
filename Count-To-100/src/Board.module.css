@@ -2,6 +2,7 @@
   width: 68vw;
   height: 90vh;
   overflow: hidden;
+  margin: 2vw;
 }
 
 .playerBoard {
@@ -11,9 +12,4 @@
   border-radius: 10px;
   width: 60vw;
   height: 34vh;
-  margin: 2vw;
-}
-
-.title {
-  margin: 2vw;
 }

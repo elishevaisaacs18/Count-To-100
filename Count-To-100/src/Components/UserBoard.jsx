@@ -36,10 +36,29 @@ const UserBoard = (props) => {
     <div className={styles.playerBoard}>
       <h2>{props.user.userName}</h2>
       <h3>{num}</h3>
-      <button onClick={add}>+1</button>
-      <button onClick={sub}>-1</button>
-      <button onClick={multiply}>*2</button>
-      <button onClick={divide}>/2</button>
+      {props.hasStartedGame ? (
+        <>
+          <button onClick={add}>+1</button>
+          <button onClick={sub}>-1</button>
+          <button onClick={multiply}>*2</button>
+          <button onClick={divide}>/2</button>
+        </>
+      ) : (
+        <>
+          <button disabled onClick={add}>
+            +1
+          </button>
+          <button disabled onClick={sub}>
+            -1
+          </button>
+          <button disabled onClick={multiply}>
+            *2
+          </button>
+          <button disabled onClick={divide}>
+            /2
+          </button>
+        </>
+      )}
       <h4>steps : {steps}</h4>
       {/* <h4>score : {score}</h4> */}
     </div>
