@@ -6,10 +6,10 @@ const Board = (props) => {
   const boardsArr = [];
   for (let i = 0; i < props.connected.length; i++) {
     const rndNum = Math.floor(Math.random() * 99);
-    const id = "player" + (i + 1);
+    // const id = "player" + (i + 1);
     console.log("props.connected[i]: ", props.connected[i]);
     boardsArr.push(
-      <UserBoard user={props.connected[i]} rndNum={rndNum} key={id} />
+      <UserBoard user={props.connected[i]} rndNum={rndNum} key={i} />
     );
   }
 

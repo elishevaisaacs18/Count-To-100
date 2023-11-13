@@ -8,7 +8,7 @@ const UserBoard = (props) => {
 
   function checkIfWon() {
     if (num === 100) {
-      alert(`${props.user.username} won`);
+      alert(`${props.user.userName} won`);
     }
   }
 
@@ -34,7 +34,7 @@ const UserBoard = (props) => {
   }
   return (
     <div className={styles.playerBoard}>
-      <h2>{props.user.username}</h2>
+      <h2>{props.user.userName}</h2>
       <h3>{num}</h3>
       <button onClick={add}>+1</button>
       <button onClick={sub}>-1</button>
