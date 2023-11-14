@@ -18,6 +18,14 @@ const SignUp = (props) => {
         alert("username already exist, please change it");
       }
     }
+    localStorage.setItem(
+        userNameValue,
+      JSON.stringify({
+        userName: userNameValue,
+        password: passwordValue,
+        scores: [],
+      })
+    );
   };
   return (
     <aside className={styles.logInContainer}>
@@ -51,7 +59,8 @@ const SignUp = (props) => {
         <br />
         <button
           className={styles.logInBtn}
-          onClick={() => props.setInLogIn(true)}
+          onClick={() => 
+            props.setInLogIn(true)}
         >
           Log In
         </button>

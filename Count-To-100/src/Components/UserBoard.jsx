@@ -1,24 +1,28 @@
 import { useState } from "react";
 import styles from "../Board.module.css";
-
+// import ShortestPath from "./ShortestPath";
 const UserBoard = (props) => {
   const [num, setNum] = useState(props.rndNum);
   const [steps, setSteps] = useState(0);
   const [scores, setScores] = useState(props.user.scores);
   const rndNum = Math.floor(Math.random() * 99);
-
   function checkIfWon(newNum) {
     if (newNum === 100) {
-      if(confirm(`${props.user.userName} won, do you want to start a new game?`) === true){
+      if (
+        confirm(
+          `${props.user.userName} won, do you want to start a new game?`
+        ) === true
+      ) {
         setNum(rndNum);
         setSteps(0);
-      } else{
+      } else {
         logOut();
       }
       setScores([...scores, steps + 1]);
       const currUser = JSON.parse(localStorage.getItem(props.user.userName));
       currUser.scores = [...scores, steps + 1];
       localStorage.setItem(props.user.userName, JSON.stringify(currUser));
+      props.findBestScores()
     }
   }
 
@@ -61,7 +65,7 @@ const UserBoard = (props) => {
       <button onClick={sub}>-1</button>
       <button onClick={multiply}>*2</button>
       <button onClick={divide}>/2</button>
-      <button onClick={changeNum}>New Game</button>
+      <button onClick={changeNum}>New Number</button>
     </>
   );
 
@@ -108,6 +112,7 @@ const UserBoard = (props) => {
       {props.hasStartedGame && props.userTurn === props.index
         ? mathButtons
         : mathButtonsDisabled}
+      {/* <ShortestPath /> */}
       <h4>steps : {steps}</h4>
       <h4>score : {displayScores()}</h4>
       <span>
