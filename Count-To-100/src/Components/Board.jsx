@@ -17,9 +17,10 @@ const Board = (props) => {
         rndNum={rndNum}
         index={i}
         key={i}
-        connectedLength={props.connected.length}
+        connected={props.connected}
         userTurn={props.userTurn}
         setUserTurn={props.setUserTurn}
+        setConnected = {props.setConnected}
       />
     );
   }

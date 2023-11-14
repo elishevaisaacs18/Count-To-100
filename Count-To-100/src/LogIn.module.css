@@ -20,7 +20,14 @@
   border-radius: 5px;
   background-color: #213547a3;
   color: white;
-  width: 33%;
+  width: 70%;
   height: 5vh;
   margin: 2vh;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
 }
+
+

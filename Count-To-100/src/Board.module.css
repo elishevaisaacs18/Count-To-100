@@ -9,10 +9,13 @@
   padding: 15px;
   border-radius: 10px;
   width: 60vw;
-  height: 24vh;
+  height: 30vh;
 }
 
 .boardsCon {
   overflow-y: auto;
   height: 100%;
+}
+button{
+  margin:5px;
 }

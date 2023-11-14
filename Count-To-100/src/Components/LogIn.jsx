@@ -50,6 +50,7 @@ const LogIn = (props) => {
       <form action="" onSubmit={handleSubmit}>
         <label htmlFor="uName">User Name</label>
         <input
+          required
           className={styles.inputBox}
           type="text"
           id="uName"
@@ -59,6 +60,7 @@ const LogIn = (props) => {
         ></input>
         <label htmlFor="pass">Password</label>
         <input
+          required
           className={styles.inputBox}
           type="password"
           id="pass"
@@ -67,6 +69,12 @@ const LogIn = (props) => {
           onChange={handlePasswordChange}
         ></input>
         <input type="submit" className={styles.logInBtn} value="Log In"></input>
+        <button
+          className={styles.logInBtn}
+          onClick={() => props.setInLogIn(false)}
+        >
+          Sign Up
+        </button>
       </form>
     </aside>
   );
