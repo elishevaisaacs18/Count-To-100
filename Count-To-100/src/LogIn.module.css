@@ -1,27 +1,26 @@
-
 .inputBox {
-  width: 25vw;
+  width: 80%;
   height: 5vh;
-  margin: 8%;
+  margin: auto;
   display: block;
+  margin-bottom: 2vh;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .logInContainer {
-  width: 30vw;
   background-color: rgb(199, 170, 231);
-  height: 100vh;
   text-align: center;
-  color: rgb(0, 0, 0);
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  flex: 1;
+  padding-top: 15vh;
 }
 
 .logInBtn {
-  border: 1px solid black;
+  border: 1px solid rgb(174, 171, 171);
   border-radius: 5px;
-  background-color: rgb(250, 184, 239);
-  width: 10vh;
+  background-color: #213547a3;
+  color: white;
+  width: 33%;
   height: 5vh;
-
+  margin: 2vh;
 }

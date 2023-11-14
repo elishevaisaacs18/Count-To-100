@@ -1,15 +1,18 @@
 .boardContainer {
-  width: 70vw;
-  height: 100vh;
-  overflow: hidden;
-  padding: 2vw;
+  flex: 2;
+  padding: 2%;
 }
 
 .playerBoard {
   background-color: rgb(148, 188, 189);
-  margin: 5px;
-  padding: 5px;
+  margin: 15px;
+  padding: 15px;
   border-radius: 10px;
   width: 60vw;
-  height: 34vh;
+  height: 24vh;
+}
+
+.boardsCon {
+  overflow-y: auto;
+  height: 100%;
 }

@@ -32,12 +32,7 @@ const Board = (props) => {
       ) : (
         <button onClick={handleStartGame}>Start Game</button>
       )}
-      <div
-        className={styles.boardsCon}
-        style={{ width: "70vw", height: "90vh" }}
-      >
-        {boardsArr}
-      </div>
+      <div className={styles.boardsCon}>{boardsArr}</div>
     </div>
   );
 };

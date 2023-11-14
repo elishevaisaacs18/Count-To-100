@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import Board from "./Board";
 import styles from "../Board.module.css";
 
 const UserBoard = (props) => {

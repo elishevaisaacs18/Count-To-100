@@ -10,7 +10,7 @@ function App() {
   const [userTurn, setUserTurn] = useState(0);
 
   return (
-    <div style={{ display: "flex" }}>
+    <>
       <Board
         connected={connected}
         hasStartedGame={hasStartedGame}
@@ -26,7 +26,7 @@ function App() {
         connected={connected}
         setConnected={setConnected}
       />
-    </div>
+    </>
   );
 }
 
