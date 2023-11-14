@@ -1,8 +1,8 @@
 .boardContainer {
-  width: 68vw;
-  height: 90vh;
+  width: 70vw;
+  height: 100vh;
   overflow: hidden;
-  margin: 2vw;
+  padding: 2vw;
 }
 
 .playerBoard {

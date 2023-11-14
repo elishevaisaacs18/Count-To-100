@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "../Board.module.css";
 import UserBoard from "./UserBoard";
 

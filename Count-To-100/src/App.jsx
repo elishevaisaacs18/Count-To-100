@@ -9,8 +9,6 @@ function App() {
   const [hasStartedGame, setHasStartedGame] = useState(false);
   const [userTurn, setUserTurn] = useState(0);
 
-  console.log("CONNECTED", connected);
-
   return (
     <div style={{ display: "flex" }}>
       <Board
@@ -34,19 +32,19 @@ function App() {
 
 export default App;
 
-localStorage.setItem(
-  "efrat",
-  JSON.stringify({
-    userName: "efrat",
-    password: "2",
-    scores: [1, 4, 6, 12],
-  })
-);
-localStorage.setItem(
-  "elisheva",
-  JSON.stringify({
-    userName: "elisheva",
-    password: "1",
-    scores: [2, 12, 6, 8],
-  })
-);
+// localStorage.setItem(
+//   "efrat",
+//   JSON.stringify({
+//     userName: "efrat",
+//     password: "2",
+//     scores: [],
+//   })
+// );
+// localStorage.setItem(
+//   "elisheva",
+//   JSON.stringify({
+//     userName: "elisheva",
+//     password: "1",
+//     scores: [],
+//   })
+// );

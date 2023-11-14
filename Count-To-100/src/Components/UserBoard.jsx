@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import { useState } from "react";
 // import Board from "./Board";
 import styles from "../Board.module.css";
 
 const UserBoard = (props) => {
   const [num, setNum] = useState(props.rndNum);
   const [steps, setSteps] = useState(0);
+  const [scores, setScores] = useState(props.user.scores);
 
   function checkIfWon(newNum) {
     if (newNum === 100) {
       alert(`${props.user.userName} won`);
+      setScores([...scores, steps + 1]);
+      const currUser = JSON.parse(localStorage.getItem(props.user.userName));
+      currUser.scores = [...scores, steps + 1];
+      localStorage.setItem(props.user.userName, JSON.stringify(currUser));
     }
   }
 
@@ -70,6 +75,12 @@ const UserBoard = (props) => {
       </button>
     </>
   );
+
+  function displayScores() {
+    let scoresStr = "";
+    scores.forEach((score) => (scoresStr += `${score} -> `));
+    return scoresStr;
+  }
   return (
     <div className={styles.playerBoard}>
       <h2>{props.user.userName}</h2>
@@ -78,7 +89,7 @@ const UserBoard = (props) => {
         ? mathButtons
         : mathButtonsDisabled}
       <h4>steps : {steps}</h4>
-      {/* <h4>score : {score}</h4> */}
+      <h4>score : {displayScores()}</h4>
     </div>
   );
 };
